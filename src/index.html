@@ -15,10 +15,9 @@
                 <div class="text-white text-2xl font-bold">Victor villa</div>
 
                 <nav class="hidden md:flex space-x-4">
-                    <a href="#" class="text-white">Home</a>
-                    <a href="#" class="text-white">About Me</a>
-                    <a href="#" class="text-white">Portfolio</a>
-                    <a href="#" class="text-white">Contact</a>
+                    <a href="#about-me" class="text-white">About Me</a>
+                    <a href="#portfolio" class="text-white">Portfolio</a>
+                    <a href="#contact" class="text-white">Contact</a>
                 </nav>
 
                 <div class="md:hidden">
@@ -32,10 +31,9 @@
                                 </button>
                             </div>
                             <div class="d-menu-content">
-                                <a href="#" class="d-menu-item">Home</a>
-                                <a href="#" class="d-menu-item">About Me</a>
-                                <a href="#" class="d-menu-item">Portfolio</a>
-                                <a href="#" class="d-menu-item">Contact</a>
+                                <a href="#about-me" class="d-menu-item">About Me</a>
+                                <a href="#portfolio" class="d-menu-item">Portfolio</a>
+                                <a href="#contact" class="d-menu-item">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -46,15 +44,16 @@
     </header>
         <div class="container mx-auto flex justify-between items-center">
             <div class="avatar ">
-                <div class="w-24 rounded-full ring ring-primary ring-offset-red-600 ring-offset-red-700">
-                    <img src="../images/Cowboy.jpg"/>
+                <div class="w-24 rounded-full ring ring-primary ring-offset-red-700">
+                    <img src="../images/Cowboy.jpg" alt="picture of a cowboy with a laso"/>
                 </div>
             </div>
         </div>
+    <main>
     <div class="container mx-auto p-4 mt-8">
         <div class="flex flex-col-reverse md:flex-row">
 
-            <div class="md:w-1/2 p-4">
+            <div id="about-me" class="md:w-1/2 p-4">
                 <h2 class="text-2xl font-bold mb-4">About Me</h2>
                 <p>
                     I am a person characterized by my relentless determination and unwavering resilience. I thrive on being outgoing and have an insatiable curiosity, especially when it comes to understanding how technology works. I adore meeting and interacting with people, which fuels my passion for connecting with the world. I was born in a small town, which created a deep affection for the simplicity of country life, particularly my love for farm animals, with horses and cows holding a special place in my heart. The most precious aspects of my life are my family, with a profound love for my mother and an unbreakable bond with my daughter. Cooking alongside my mother is a cherished activity that not only deepens my culinary skills but also serves as a meaningful connection to the recipes and memories passed down by my late grandmother. These two remarkable women have played an integral role in shaping the person I am today, and I hold them to the highest standard as my greatest sources of inspiration and strength. My blend of determination, curiosity, and a strong appreciation for family and tradition defines who I am as a person.
@@ -62,12 +61,12 @@
 
             </div>
             <div class="md:w-1/2 p-4 md:order-1">
-                <img src="../images/cooking.jpg" height="527" width="612" class="rounded-lg shadow-lg">
+                <img src="../images/cooking.jpg" alt="image of a woman cooking alongside a child" class="rounded-lg shadow-lg">
             </div>
         </div>
     </div>
 
-    <div class="carousel w-full">
+    <div id="portfolio" class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
             <img src="../images/front end.jpg" alt="image" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -90,7 +89,8 @@
         </div>
     </div>
 
-     <section class="bg-white rounded-lg shadow-lg p-4 mb-4">
+    </main>
+     <section id="contact" class="bg-white rounded-lg shadow-lg p-4 mb-4">
          <h2 class="text-x1 font-semibold mb-2">Contact Me</h2>
 
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -134,7 +134,7 @@
      </section>
 
      <footer class="bg-gray-300 text-center mt-4">
-         2023 cookie and privacy policy
+         2023 cookies and privacy policy
      </footer>
      </section>
   </body>
