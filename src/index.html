@@ -4,97 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-    <link href="script.js">
+    <script src="https://kit.fontawesome.com/49123a97da.js" crossorigin="anonymous"></script>
     <title>milestone-3</title>
 </head>
   <body>
     <header class=" p-4 text-white">
-        <div class="container mx-auto flex justify-between items-center">
+        <div class="bg-blue-500 p-4">
+            <div class="container mx-auto flex justify-between items-center">
 
-            <div class="avatar ">
-                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-amber-300">
-                    <img src="../public_html/documentation/mobil1.png" alt="image">
+                <div class="text-white text-2xl font-bold">Victor villa</div>
+
+                <nav class="hidden md:flex space-x-4">
+                    <a href="#" class="text-white">Home</a>
+                    <a href="#" class="text-white">About Me</a>
+                    <a href="#" class="text-white">Portfolio</a>
+                    <a href="#" class="text-white">Contact</a>
+                </nav>
+
+                <div class="md:hidden">
+                    <div class="relative">
+                        <div class="d-menu">
+                            <div class="d-menu-trigger">
+                                <button class="d-btn">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="d-menu-content">
+                                <a href="#" class="d-menu-item">Home</a>
+                                <a href="#" class="d-menu-item">About Me</a>
+                                <a href="#" class="d-menu-item">Portfolio</a>
+                                <a href="#" class="d-menu-item">Contact</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
 
-
-            <nav class="hidden md:flex space-x-4">
-                <a href="#" class="hover:text-gray-300">Home</a>
-                <a href="#" class="hover:text-gray-300">About</a>
-                <a href="#" class="hover:text-gray-300">Portfolio</a>
-                <a href="#" class="hover:text-gray-300">Contact</a>
-            </nav>
-
-            <div class="md:hidden">
-                <button class="text-2xl focus:outline-none" id="mobile-menu-button">
-                    &#9776;
-                </button>
+    </header>
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="avatar ">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-red-600 ring-offset-red-700">
+                    <img src="../images/Cowboy.jpg"/>
+                </div>
             </div>
         </div>
-    </header>
-
-    <div class="md:hidden bg-blue-500 text-white p-4" id="mobile-menu">
-        <a href="#" class="block py-2">Home</a>
-        <a href="#" class="block py-2">About</a>
-        <a href="#" class="block py-2">Portfolio</a>
-        <a href="#" class="block py-2">Contact</a>
-    </div>
-    
     <div class="container mx-auto p-4 mt-8">
         <div class="flex flex-col-reverse md:flex-row">
 
             <div class="md:w-1/2 p-4">
                 <h2 class="text-2xl font-bold mb-4">About Me</h2>
-                <p>I am a resilient person.  a hybrid between old school and the new school. I try to celebrate and enjoy the little things in life for the only thing certain in life is death.
+                <p>
+                    I am a person characterized by my relentless determination and unwavering resilience. I thrive on being outgoing and have an insatiable curiosity, especially when it comes to understanding how technology works. I adore meeting and interacting with people, which fuels my passion for connecting with the world. I was born in a small town, which created a deep affection for the simplicity of country life, particularly my love for farm animals, with horses and cows holding a special place in my heart. The most precious aspects of my life are my family, with a profound love for my mother and an unbreakable bond with my daughter. Cooking alongside my mother is a cherished activity that not only deepens my culinary skills but also serves as a meaningful connection to the recipes and memories passed down by my late grandmother. These two remarkable women have played an integral role in shaping the person I am today, and I hold them to the highest standard as my greatest sources of inspiration and strength. My blend of determination, curiosity, and a strong appreciation for family and tradition defines who I am as a person.
                 </p>
-                <ul class="list-disc list-inside mt-2">
-                    <li>should have</li>
-                    <li>just paragraph</li>
-                    <li>or should I</li>
-                    <li>have a list and a paragraph?</li>
-                </ul>
+
             </div>
             <div class="md:w-1/2 p-4 md:order-1">
-                <img src="../public_html/documentation/mobil1.png" alt="image" class="rounded-lg shadow-lg">
+                <img src="../images/cooking.jpg" height="527" width="612" class="rounded-lg shadow-lg">
             </div>
         </div>
     </div>
 
     <div class="carousel w-full">
         <div id="slide1" class="carousel-item relative w-full">
-            <img src="../public_html/documentation/mobil1.png" alt="image" class="w-full" />
+            <img src="../images/front end.jpg" alt="image" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" class="btn btn-circle">❮</a>
                 <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
         </div>
-        <div id="slide2" class="carousel-item relative w-full">
-            <img src="../public_html/documentation/mobil1.png" alt="image" class="w-full" />
+        <div id="slide2" class="carousel-item relative w-full"><img src="../images/backend.webp" alt="image" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" class="btn btn-circle">❮</a>
                 <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
         </div>
         <div id="slide3" class="carousel-item relative w-full">
-            <img src="../public_html/documentation/mobil1.png" alt="image" class="w-full" />
+            <img src="../images/Managerial skills.jpg" alt="image" class="w-full" />
             <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" class="btn btn-circle">❮</a>
                 <a href="#slide4" class="btn btn-circle">❯</a>
             </div>
         </div>
-        <div id="slide4" class="carousel-item relative w-full">
-            <img src="../public_html/documentation/mobil1.png" alt="image" class="w-full" />
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle">❮</a>
-                <a href="#slide1" class="btn btn-circle">❯</a>
-            </div>
-        </div>
     </div>
-
-           <div>
-            <p>links,images,info about my acquired skills delete this  </p>
-
-           </div>
 
      <section class="bg-white rounded-lg shadow-lg p-4 mb-4">
          <h2 class="text-x1 font-semibold mb-2">Contact Me</h2>
@@ -133,12 +127,14 @@
      <section class="bg-white rounded-lg shadow-lg p-4">
          <h2 class="text-xl font-semibold mb-4">Connect</h2>
          <div class="flex space-x-4">
-             <a href="#" class="text-blue-800 hover:text-blue-900"><i class="fab fa-linkedin"></i></a>
+             <a href="#" class="text-blue-800 hover:text-blue-900">
+                 <i class="fa-brands fa-linkedin fa-shake fa-2xl"></i>  <i class="fa-brands fa-shake fa-github fa-2lg"></i>
+             </a>
          </div>
      </section>
 
      <footer class="bg-gray-300 text-center mt-4">
-         2023 Linked In
+         2023 cookie and privacy policy
      </footer>
      </section>
   </body>
